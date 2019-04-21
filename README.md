@@ -59,3 +59,56 @@ i. to display the array contents in an ascending order<br/>
 ii. to display the array contents in a descending order<br/>
 iii. to display the second largest element in an array<br/>
 iv. to display the second smallest element in an array<br/>
+29. [Write a C program to read a line of text and reverse it using recursive function ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day029.c)
+30. [Write a program in C to print all unique elements in an array.
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day030.c)
+31. [Write a C program to count the frequency of each element of an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day031.c)
+32. [Write a C program to find the sum of all elements of the array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day032.c)
+33. [Write a C program to delete an element from an array in a menu driven fashion.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day033.c)
+34. [Write a C program to print odd positioned array elements(only prime numbers) and even positioned array elements(only prime numbers) separately and print their summations.
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day034.c)
+35. [Write a C program to merge two arrays of same size sorted in descending order.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day035.c)
+36. [Write a C program to insert a new value in the array(unsorted list)](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day036.c)
+37. [Write a C program to insert a new value in the array(sorted list)](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day037.c)
+38. [Write a C program to accept either string/integer and find sum of digits in it](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day038.c)
+39. [Write a C program to Generate the following output](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day039.c)
+```
+Input : 5
+Output :
+*                  *
+* *              * *
+* * *          * * *
+* * * *      * * * *
+* * * * *  * * * * *
+* * * * *  * * * * *
+* * * *      * * * *
+* * *          * * *
+* *              * *
+*                  *
+```
+40. [Write a C program to Generate the following output](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day040.c)
+```
+Input : 7
+Output :
+* * * * * * *  * * * * * * *
+* * * * * *      * * * * * *
+* * * * *          * * * * *
+* * * *              * * * *
+* * *                  * * *
+* *                      * *
+*                          *
+*                          *
+* *                      * *
+* * *                  * * *
+* * * *              * * * *
+* * * * *          * * * * *
+* * * * * *      * * * * * *
+* * * * * * *  * * * * * * *
+```
+41. [Write a C program to find any subarray that sums to zero, if one exists.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day041.c)
+42. [Write a C program to check if the string contains consecutive letters and each letter occurs exactly once. 
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day042.c)
+43. [Write a C program to find the ASCII values summation of vowels in the given string](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day043.c)
+44. [Write a function that returns the index where a character, c, occurs in a string, s. The function returns -1 if c is not present in s. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day044.c)
+45. [Write a function that returns the index where a character, c, occurs in a string, s. The function returns -1 if c is not present in s. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day045.c)
+46. [Write a C program with a function that takes two strings, s and t, as arguments. Copy string s into t, but remove all white space(meaningless)and punctuation. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day046.c)
