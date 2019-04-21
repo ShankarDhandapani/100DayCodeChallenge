@@ -50,3 +50,12 @@ $ $ $ $ *
 # # # # #
 # # # # #
 ```
+26. [Write a C program to search an element in an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day026.c)
+27. [Write a C program to separate positive and negative numbers using arrays](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day027.c)
+28. [Write a C program to perform the following using Arrays,
+get the size of an array from user, assume you gonna work with integer arrays
+write 4 user defined functions for](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day028.c)
+i. to display the array contents in an ascending order
+ii. to display the array contents in a descending order
+iii. to display the second largest element in an array
+iv. to display the second smallest element in an array
