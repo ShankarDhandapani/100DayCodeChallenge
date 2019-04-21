@@ -112,3 +112,6 @@ Output :
 44. [Write a function that returns the index where a character, c, occurs in a string, s. The function returns -1 if c is not present in s. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day044.c)
 45. [Write a function that returns the index where a character, c, occurs in a string, s. The function returns -1 if c is not present in s. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day045.c)
 46. [Write a C program with a function that takes two strings, s and t, as arguments. Copy string s into t, but remove all white space(meaningless)and punctuation. Use array indexing.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day046.c)
+47. [Write a function that detects the presence of a whole word, wd, in a string, s.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day047.c)
+48. [Write a C program to checks if a string is a palindrome by ignoring all white spaces.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day048.c)
+49. [Write a C program for Bubble sort.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day049.c)
