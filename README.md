@@ -9,3 +9,8 @@
 8. [Write a C program to check whether the entered number is prime number or not?](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day008.c)
 9. [Write a C program to find Sum and Average of 10 numbers](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day009.c)
 10. [Write a C program to check whether the entered pair of numbers are Amicable numbers or not?](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day010.c) 
+11. [Write a C program to swap two numbers using pointers](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day011.c)
+12. [Write a C program to find an ASCII value of an input](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day012.c)
+13. [Write a C program to check the entered character is Vowel or Consonant](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day013.c)
+14. [Write a C program to show relationship between Arrays and Pointers](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day014.c)
+15. [Write a C Program to Demonstrate the concept of Dynamic Memory Allocation.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day015.c)
