@@ -115,3 +115,4 @@ Output :
 47. [Write a function that detects the presence of a whole word, wd, in a string, s.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day047.c)
 48. [Write a C program to checks if a string is a palindrome by ignoring all white spaces.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day048.c)
 49. [Write a C program for Bubble sort.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day049.c)
+50. [Write a C program to calculate the sum of all the elements in a matrix](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day050.c)
