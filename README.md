@@ -119,3 +119,4 @@ Output :
 51. [Write a C program to extract the diagonal elements from the matrix and sum it.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day051.c)
 52. [Write a C program to interchange the main diagonal elements with secondary diagonal elements.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day052.c)
 53. [Write a C program to check whether the matrix is Sparse matrix or not. ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day053.c)
+54. [Write a C program to find sum of each row and column of a matrix](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day054.c)
