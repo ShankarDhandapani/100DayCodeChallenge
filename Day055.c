@@ -8,7 +8,6 @@ void left_rotate(int *a,int n){
     a[i] = a[0];
     a[0] = temp;
   }
-  
 }
 
 int main(void) {
@@ -35,6 +34,5 @@ int main(void) {
   for(i = 0; i < size; i++){
     printf("\n%d", arr[i]);
   }
-  
   return 0;
 }
