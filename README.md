@@ -121,3 +121,4 @@ Output :
 53. [Write a C program to check whether the matrix is Sparse matrix or not. ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day053.c)
 54. [Write a C program to find sum of each row and column of a matrix](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day054.c)
 55. [Write a C program to left rotate an array by n position.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day055.c)
+56. [Write a C program to left rotate an array by n position and right rotate by n position in a menu driven fashion.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day056.c)
