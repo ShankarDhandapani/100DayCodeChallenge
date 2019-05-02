@@ -124,5 +124,5 @@ Output :
 56. [Write a C program to left rotate an array by n position and right rotate by n position in a menu driven fashion.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day056.c)
 57. [Write a C program to count number of trailing zeros in the binary representation of an integer.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day057.c)
 58. [Write a C program to make a palindromic string non-palindromic by rearranging its letters.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day058.c)
-59. [Write a C program to capitalise the first and last letter of each word in an input line.
-](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day059.c)
+59. [Write a C program to capitalise the first and last letter of each word in an input line.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day059.c)
+60. [Write a C program to find a subarray which sums to an input sum.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day060.c)
