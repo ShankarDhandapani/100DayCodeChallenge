@@ -127,3 +127,4 @@ Output :
 59. [Write a C program to capitalise the first and last letter of each word in an input line.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day059.c)
 60. [Write a C program to find a subarray which sums to an input sum.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day060.c)
 61. [Write a C program to check whether a number is perfect number or not.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day061.c)
+62. [Write a C program to generate Strong numbers from 1 to 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day062.c)
