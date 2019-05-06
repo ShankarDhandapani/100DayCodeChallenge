@@ -129,3 +129,5 @@ Output :
 61. [Write a C program to check whether a number is perfect number or not.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day061.c)
 62. [Write a C program to generate Strong numbers from 1 to 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day062.c)
 63. [Write a C program to print the frequency of letters in a String using run-length encoding.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day063.c)
+64. [Write a C program to print the frequency of letters in a String using run-length encoding.]
+(https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day064.c)
