@@ -131,3 +131,4 @@ Output :
 63. [Write a C program to print the frequency of letters in a String using run-length encoding.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day063.c)
 64. [Write a C program to print the frequency of letters in a String using run-length encoding.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day064.c)
 65. [Write a C program to find number of larger elements on right side in a string](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day065.c)
+66. [Write a C program to count number of ways to reach a score using 1 and 2 with no consecutive 2s.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day066.c)
