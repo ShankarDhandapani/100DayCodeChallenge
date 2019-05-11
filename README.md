@@ -133,3 +133,4 @@ Output :
 65. [Write a C program to find number of larger elements on right side in a string](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day065.c)
 66. [Write a C program to count number of ways to reach a score using 1 and 2 with no consecutive 2s.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day066.c)
 67. [Write a C program to Replace duplicates with greater than previous duplicate value](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day067.c)
+68. [Write a C program to rearrange odd and even values in alternate fashion in Ascending order.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day068.c)
