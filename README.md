@@ -135,3 +135,4 @@ Output :
 67. [Write a C program to Replace duplicates with greater than previous duplicate value](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day067.c)
 68. [Write a C program to rearrange odd and even values in alternate fashion in Ascending order.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day068.c)
 69. [Write a C program to print Sum Triangle for a given array](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day069.c)
+70. [Write a C program to find smallest pair in an array and its sum.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day070.c)
