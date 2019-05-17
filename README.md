@@ -136,3 +136,14 @@ Output :
 68. [Write a C program to rearrange odd and even values in alternate fashion in Ascending order.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day068.c)
 69. [Write a C program to print Sum Triangle for a given array](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day069.c)
 70. [Write a C program to find smallest pair in an array and its sum.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day070.c)
+71. [Write a C program to Generate the following output](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day071.c)
+```
+For Input
+5
+Output as
+0        0
+01      01
+010    010 
+0101  0101 
+0101001010
+```
