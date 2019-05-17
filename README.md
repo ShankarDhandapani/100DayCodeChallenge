@@ -147,3 +147,4 @@ Output as
 0101  0101 
 0101001010
 ```
+72. [Write a C program to print whether the given date is weekday or weekend](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day072.c)
