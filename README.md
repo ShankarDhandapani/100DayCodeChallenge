@@ -149,3 +149,6 @@ Output as
 ```
 72. [Write a C program to print whether the given date is weekday or weekend](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day072.c)
 73. [Analyze and design a solution that will print the numbers as a spiral. For example for the given N x M matrix, where N is the number of rows and M is the number of columns, the number sequence will be from 1 to N x M.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day073.c)
+74. [Write a C program to rotate the array elements in clockwise rotation and print it.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day074.c)
+75. [Write a C program to rotate the array elements in anti-clockwise rotation and print it.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day075.c)
+76. [Write a C program that clears to zero all the edge elements of an MXN matrix.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day076.c)
