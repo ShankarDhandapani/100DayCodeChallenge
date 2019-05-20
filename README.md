@@ -152,3 +152,4 @@ Output as
 74. [Write a C program to rotate the array elements in clockwise rotation and print it.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day074.c)
 75. [Write a C program to rotate the array elements in anti-clockwise rotation and print it.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day075.c)
 76. [Write a C program that clears to zero all the edge elements of an MXN matrix.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day076.c)
+77. [Write a C program to find minimum absolute difference of a number and its closest prime.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day077.c)
