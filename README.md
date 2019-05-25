@@ -157,3 +157,4 @@ Output as
 79. [Write a C program to find closest smaller value for every element in an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day079.c)
 80. [Write a C program to move all the special characters to end of the string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day080.c)
 81. [Write a C program to count total number of indices(i,j) such that arr[i]=arr[j] & i != j.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day081.c)
+82. [Write a C program to count pairs in array whose sum is divisible by k.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day082.c)
