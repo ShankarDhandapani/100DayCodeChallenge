@@ -160,3 +160,4 @@ Output as
 82. [Write a C program to count pairs in array whose sum is divisible by k.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day082.c)
 83. [Write a C program to find the longest subsequence such that adjacent elements have at-least one common digit.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day083.c)
 84. [Write a C program to minimise array sum by subtracting larger elements from smaller ones.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day084.c)
+85. [Write a C program to find number of unique pairs in an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day085.c)
