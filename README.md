@@ -158,3 +158,5 @@ Output as
 80. [Write a C program to move all the special characters to end of the string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day080.c)
 81. [Write a C program to count total number of indices(i,j) such that arr[i]=arr[j] & i != j.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day081.c)
 82. [Write a C program to count pairs in array whose sum is divisible by k.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day082.c)
+83. [Write a C program to find the longest subsequence such that adjacent elements have at-least one common digit.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day083.c)
+84. [Write a C program to minimise array sum by subtracting larger elements from smaller ones.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day084.c)
