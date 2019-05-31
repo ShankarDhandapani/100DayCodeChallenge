@@ -161,3 +161,4 @@ Output as
 83. [Write a C program to find the longest subsequence such that adjacent elements have at-least one common digit.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day083.c)
 84. [Write a C program to minimise array sum by subtracting larger elements from smaller ones.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day084.c)
 85. [Write a C program to find number of unique pairs in an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day085.c)
+86. [Write a C program to print all the palindromic partitions in a given string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day086.c)
