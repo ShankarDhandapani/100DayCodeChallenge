@@ -164,3 +164,4 @@ Output as
 86. [Write a C program to print all the palindromic partitions in a given string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day086.c)
 87. [Write a C program to Count pairs in an array such that LCM(arr[i], arr[j]) > min(arr[i],arr[j])
 ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day087.c)
+88. [Write a C program to find largest number with prime digits.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day088.c)
