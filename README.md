@@ -162,3 +162,5 @@ Output as
 84. [Write a C program to minimise array sum by subtracting larger elements from smaller ones.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day084.c)
 85. [Write a C program to find number of unique pairs in an array.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day085.c)
 86. [Write a C program to print all the palindromic partitions in a given string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day086.c)
+87. [Write a C program to Count pairs in an array such that LCM(arr[i], arr[j]) > min(arr[i],arr[j])
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day087.c)
