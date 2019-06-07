@@ -168,3 +168,4 @@ Output as
 89. [Write a C program to check whether we can make all numbers of an array equal.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day089.c)
 90. [Write a C program to find Largest Palindromic Number by permuting digits.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day090.c)
 91. [Write a C program to generate all cyclic permutations of a number.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day091.c)
+92. [Write a C program to remove consecutive vowels from a given string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day092.c)
