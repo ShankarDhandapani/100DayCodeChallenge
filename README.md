@@ -166,3 +166,4 @@ Output as
 ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day087.c)
 88. [Write a C program to find largest number with prime digits.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day088.c)
 89. [Write a C program to check whether we can make all numbers of an array equal.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day089.c)
+90. [Write a C program to find Largest Palindromic Number by permuting digits.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day090.c)
