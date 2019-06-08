@@ -169,3 +169,4 @@ Output as
 90. [Write a C program to find Largest Palindromic Number by permuting digits.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day090.c)
 91. [Write a C program to generate all cyclic permutations of a number.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day091.c)
 92. [Write a C program to remove consecutive vowels from a given string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day092.c)
+93. [Write a C program to check whether the given number is circular prime number or not and also generate the circular prime numbers from 1 to 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day093.c)
