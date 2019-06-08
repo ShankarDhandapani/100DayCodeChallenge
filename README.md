@@ -172,3 +172,5 @@ Output as
 93. [Write a C program to check whether the given number is circular prime number or not and also generate the circular prime numbers from 1 to 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day093.c)
 94. [Write a C program to check whether the given number is Narcissistic Decimal Number or not and also generate first 15 Narcissistic Decimal Numbers.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day094.c)
 95. [Write a C program to check whether the given number is Automorphic Number or not and also generate Automorphic Numbers between 1 & 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day095.c)
+96. [Write a C program to display missing characters to make a string pangram.
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day096.c)
