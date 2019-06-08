@@ -2,48 +2,29 @@
 #include <stdlib.h>
 
 int main(void) {
-  int size_of_the_array, *array, *subsequence, i, j, ones, tens, count = 0;
+  int sizeOfTheArray, *array, i, j, k, count = 0;
   
   printf("Enter the size of the array");
-  scanf("%d", &size_of_the_array);
+  scanf("%d", &sizeOfTheArray);
   
-  array = (int*) calloc(size_of_the_array, sizeof(int));
-  subsequence = (int*) calloc((size_of_the_array * 2), sizeof(int));
+  array = (int*) calloc (sizeOfTheArray, sizeof(int));
   
-  printf("Enter %d elements", size_of_the_array);
-  for(i = 0; i < size_of_the_array; i++){
+  printf("\nInput %d elements", sizeOfTheArray);
+  for(i = 0; i < sizeOfTheArray; i++){
     scanf("%d", &array[i]);
   }
   
-  for(i = 0; i < size_of_the_array; i++){
-    ones = array[i] % 10;
-    tens = array[i] / 10;
-    for(j = i + 1; j < size_of_the_array; j++){
-      if(((ones == array[j] % 10) || (ones == array[j] / 10)) || ((tens == array[j] % 10) || (tens == array[j] / 10))){
-        subsequence[count++] = array[i];
-        subsequence[count++] = array[j];
-        i = j - 1; 
-        break;
+  printf("\nEnter the value for k");
+  scanf("%d", &k);
+  
+  for(i = 0; i < sizeOfTheArray; i++){
+    for(j = (i + 1); j < sizeOfTheArray; j++){
+      if((array[i] + array[j]) % k == 0){
+        count++;
       }
     }
   }
   
-  for(i = 0; i < count; i++){
-    for(j = i + 1; j < count; j++){
-      if(subsequence[i] == subsequence[j]){
-        subsequence[j] = -1;
-      }
-    }
-  }
-  
-  printf("\nThe longest subsequence is ");
-  for(i = 0; i < count; i++){
-    if(subsequence[i] != -1){
-      printf("%d", subsequence[i]);
-      if(i != (count - 1)){
-        printf(",");
-      }
-    }
-  }
+  printf("\nResult is %d", count);
   return 0;
 }

@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 int main() {
-  int row, col, i, j, temp;
+  int row, col, i, j;
   
-  printf("Enter the no. of rows");
+  printf("Enter the value for N");
   scanf("%d", &row);
-  printf("Enter the no. of columns");
+  printf("Enter the value for M");
   scanf("%d", &col);
   
-  int value = 1, max_value = (row * col), **arr, **count;
+  int value = 1, max_value = (row * col), **arr;
   
   // h = Horizontal iteration count, v = Vertical iteration count
   int h = col, v = row;
@@ -18,8 +18,7 @@ int main() {
   int rk = 0, dk = col - 1, lk = row - 1, tk = 0;
   
   //Total number of iterations
-  int iteration_count = (col % 2) == 0 ? col / 2 : (col / 2);
-  int final_iteration = (col % 2) == 0 ? col / 2 : (col / 2) + 1;
+  int iteration_count = (col % 2) == 0 ? col / 2 : (col / 2) + 1;
   
   //Creating an dynamic 2D array
   arr = (int **) calloc(row, sizeof(int*));
@@ -27,38 +26,14 @@ int main() {
     arr[i] = (int *) calloc(col, sizeof(int));
   }
   
-  //Creating an dynamic 2D array
-  count = (int **) calloc(row, sizeof(int*));
-  for(i = 0; i < row; i++){
-    count[i] = (int *) calloc(col, sizeof(int));
-  }
-  
-  //Assigning values to array
-  for(i = 0; i < row; i++){
-    for(j = 0; j < col; j++){
-      printf("\ninsert the element for %d,%d", i, j);
-      scanf("%d", &arr[i][j]);
-    }
-  }
-
-  printf("\nThe matrix is\n");
-  for(i = 0; i < row; i++){
-    for(j = 0; j < col; j++){
-      printf("%d\t", arr[i][j]);
-    }
-    printf("\n");
-  }
-
   //Pattern for spiral matrix
   while(iteration_count > 0){
     
     //Right Movement
     for(i = 0; i < h; i++){
-      if(count[rk][i] == 0){
-        temp = arr[rk][i];
-        arr[rk][i] = arr[0][0];
-        arr[0][0] = temp;
-        count[rk][i]++, value++;
+      if(arr[rk][i] == 0){
+        arr[rk][i] = value;
+        value++;
       }
       if(value > max_value){
         break;
@@ -68,11 +43,9 @@ int main() {
     
     //Down Movement
     for(i = 0; i < v; i++){
-      if(count[i][dk] == 0){
-        temp = arr[i][dk];
-        arr[i][dk] = arr[0][0];
-        arr[0][0] = temp;
-        count[i][dk]++, value++;
+      if(arr[i][dk] == 0){
+        arr[i][dk] = value;
+        value++;
       }
       if(value > max_value){
         break;
@@ -82,11 +55,9 @@ int main() {
     
     //Left Movement
     for(i = col - 1; i >= 0; i--){
-      if(count[lk][i] == 0){
-        temp = arr[lk][i];
-        arr[lk][i] = arr[0][0];
-        arr[0][0] = temp;
-        count[lk][i]++, value++;
+      if(arr[lk][i] == 0){
+        arr[lk][i] = value;
+        value++;
       }
       if(value > max_value){
         break;
@@ -96,30 +67,23 @@ int main() {
     
     //Top Movement
     for(i = row - 1; i >= 0; i--){
-      if(count[i][tk] == 0){
-        temp = arr[i][tk];
-        arr[i][tk] = arr[0][0];
-        arr[0][0] = temp;
-        count[i][tk]++, value++;
+      if(arr[i][tk] == 0){
+        arr[i][tk] = value;
+        value++;
       }
       if(value > max_value){
         break;
       }
-    }    
+    }
     if(value > max_value){
-        break;
-      }
+      break;
+    }
     v--;
     rk++, dk--, lk--, tk++;
   }
-
-  for(i = 0; i < (final_iteration - 1); i++){
-    temp = arr[i][i];
-    arr[i][i] = arr[i + 1][i + 1];
-    arr[i + 1][i + 1] = temp;
-  }
   
-  printf("\nClockwise Rotation output is\n");
+  //Printing the final spiral matrix
+  printf("\nThe final spiral matrix is\n");
   for(i = 0; i < row; i++){
     for(j = 0; j < col; j++){
       printf("%d\t", arr[i][j]);

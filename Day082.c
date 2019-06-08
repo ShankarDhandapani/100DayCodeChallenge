@@ -2,29 +2,33 @@
 #include <stdlib.h>
 
 int main(void) {
-  int sizeOfTheArray, *array, i, j, k, count = 0;
+  int size_of_array, *array, flag = 0, result = 0, i, j;
   
   printf("Enter the size of the array");
-  scanf("%d", &sizeOfTheArray);
+  scanf("%d", &size_of_array);
   
-  array = (int*) calloc (sizeOfTheArray, sizeof(int));
+  array = (int*) calloc(size_of_array, sizeof(int));
   
-  printf("\nInput %d elements", sizeOfTheArray);
-  for(i = 0; i < sizeOfTheArray; i++){
+  printf("\nInput %d elements", size_of_array);
+  for(i = 0; i < size_of_array; i++){
     scanf("%d", &array[i]);
+    if(i != 0 && array[i] == array[i - 1] && flag != 1){
+      flag = 1;
+    }
   }
   
-  printf("\nEnter the value for k");
-  scanf("%d", &k);
-  
-  for(i = 0; i < sizeOfTheArray; i++){
-    for(j = (i + 1); j < sizeOfTheArray; j++){
-      if((array[i] + array[j]) % k == 0){
-        count++;
+ if(flag != 0){
+    for(i = 0; i < size_of_array; i++){
+      for(j = i + 1; j < size_of_array; j++){
+        if(array[i] == array[j]){
+          result++;
+        }
+        break;
       }
     }
   }
   
-  printf("\nResult is %d", count);
+  printf("\nResult is %d", result);
+  
   return 0;
 }

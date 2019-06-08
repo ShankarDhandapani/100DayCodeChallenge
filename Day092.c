@@ -1,33 +1,48 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-int check_vowels(char c) {
-  if(c == 97 || c == 101 || c == 105 || c == 111 || c == 117) {
-    return 1;
+void left_rotate(int *a,int n, int count){
+  int temp;
+  for(int j = 0; j < count; j++){
+    for(int i = (n - 1); i > 0; i--){
+      temp = a[i];
+      a[i] = a[0];
+      a[0] = temp;
+    }
   }
-  return 0;
+}
+
+void print_array(int *a, int n){
+  for(int i = n - 1; i >= 0; i--){
+    printf("%d", a[i]);
+  }
+  printf("\n");
 }
 
 int main(void) {
-  char sentence[50], output_sentence[50] = "";
-  int flag = 0, i, count = 0;
+  int number, *array, i, count = 0;
+  char number_as_string[10];
   
-  printf("Enter the string");
-  scanf("%[^\n]s", sentence);
+  printf("Enter a number");
+  scanf("%d", &number);
   
-  for(i = 0; i < strlen(sentence); i++){
-    if(check_vowels(sentence[i]) && flag != 1){
-      flag = 1;
-      output_sentence[count++] = sentence[i];
-    } else if(check_vowels(sentence[i]) && flag == 1) {
-      continue;
-    } else {
-      flag = 0;
-      output_sentence[count++] = sentence[i];
-    }
+  sprintf(number_as_string, "%d", number);
+  
+  array = (int*) calloc(strlen(number_as_string), sizeof(int));
+  
+  i = number;
+  while(i != 0){
+    array[count++] = i % 10;
+    i /= 10;
   }
   
-  printf("%s", output_sentence);
-  
+  i = 0;
+  printf("\nPossible cyclic permutations are\n");
+  do{
+    print_array(array, count);
+    left_rotate(array, count, 1);
+    i++;
+  }while(i < count);
   return 0;
 }

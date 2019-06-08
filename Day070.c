@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void) {
-  int size_of_the_array, i, *array, temp;
+  int size_of_the_array, array[8], sum_of_triangle[8][8], i, j, column_count;
   
   printf("Enter the size of the array");
   scanf("%d", &size_of_the_array);
   
-  array = (int*) calloc(size_of_the_array, sizeof(int));
+  column_count = size_of_the_array;
   
   printf("\nEnter %d elements", size_of_the_array);
   for(i = 0; i < size_of_the_array; i++){
@@ -15,16 +14,27 @@ int main(void) {
   }
   
   for(i = 0; i < size_of_the_array; i++){
-    for(int a = i + 1; a < size_of_the_array; a++){
-      if(array[i] > array[a]){
-        temp = array[i];
-        array[i] = array[a];
-        array[a] = temp;
+    for(j = 0; j < column_count; j++){
+      if(i == 0){
+        sum_of_triangle[i][j] = array[j];
+      }else{
+        sum_of_triangle[i][j] = sum_of_triangle[i - 1][j] + sum_of_triangle[i - 1][j + 1];
       }
     }
+    column_count--;
   }
   
-  printf("\nSmallest pair is [%d,%d]", array[0], array[1]);
-  printf("\nSum of the smallest pair is %d", (array[0] + array[1]));
+  column_count = 1;
+  printf("\nSum Triangle is\n");
+  for(i = (size_of_the_array - 1); i >= 0; i--){
+    for(j = 0; j < column_count; j++){
+      printf("%d", sum_of_triangle[i][j]);
+      if(j != (column_count - 1)){
+        printf(" ");
+      }
+    }
+    column_count++;
+    printf("\n");
+  }
   return 0;
 }

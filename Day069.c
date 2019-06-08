@@ -1,40 +1,62 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+int check_even_or_odd(int number){
+  int flag = 0;
+  if(number % 2 == 0){
+    flag = 1;
+  }
+  return flag;
+}
+
+void pattern(int *array, int size_of_the_array){
+  int i, j, temp;
+  for(i = 0; i < (size_of_the_array - 2); i++){
+    if(check_even_or_odd(array[i]) != check_even_or_odd(array[i + 2])){
+      temp = array[i + 1];
+      array[i + 1] = array[i + 2];
+      array[i + 2] = temp;
+    }
+  }
+}
 
 int main(void) {
-  int size_of_the_array, array[8], sum_of_triangle[8][8], i, j, column_count;
+  int *array, size_of_the_array, temp, i, j;
   
-  printf("Enter the size of the array");
+  printf("\nEnter the size of the array");
   scanf("%d", &size_of_the_array);
   
-  column_count = size_of_the_array;
+  array = (int*) calloc(size_of_the_array, sizeof(int));
   
-  printf("\nEnter %d elements", size_of_the_array);
+  printf("\nInput %d elements", size_of_the_array);
   for(i = 0; i < size_of_the_array; i++){
     scanf("%d", &array[i]);
   }
   
   for(i = 0; i < size_of_the_array; i++){
-    for(j = 0; j < column_count; j++){
-      if(i == 0){
-        sum_of_triangle[i][j] = array[j];
-      }else{
-        sum_of_triangle[i][j] = sum_of_triangle[i - 1][j] + sum_of_triangle[i - 1][j + 1];
+    for(j = i + 1; j < size_of_the_array; j++){
+      if(array[i] > array[j]){
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
       }
     }
-    column_count--;
   }
   
-  column_count = 1;
-  printf("\nSum Triangle is\n");
-  for(i = (size_of_the_array - 1); i >= 0; i--){
-    for(j = 0; j < column_count; j++){
-      printf("%d", sum_of_triangle[i][j]);
-      if(j != (column_count - 1)){
-        printf(" ");
-      }
-    }
-    column_count++;
-    printf("\n");
+  if(check_even_or_odd(array[0]) == 1){
+    printf("\nSmallest value is %d, so output is Even-Odd pattern\n", array[0]);
+  }else{
+    printf("\nSmallest value is %d, so output is Odd-Even pattern\n", array[0]);
   }
+  
+  pattern(array, size_of_the_array);
+  
+  for(i = 0; i < size_of_the_array; i++){
+    printf("%d", array[i]);
+    if(i != (size_of_the_array - 1)){
+      printf(",");
+    }
+  }
+  
   return 0;
 }

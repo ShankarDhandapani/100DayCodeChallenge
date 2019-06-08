@@ -1,37 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void) {
-  int *array, size_of_the_array, i, flag = 0;
+  int number, i, ones, prime_digits[4] = {2, 3, 5, 7}, flag = 2, j;
   
-  printf("Enter the size of the array");
-  scanf("%d", &size_of_the_array);
+  printf("Enter a number");
+  scanf("%d", &number);
   
-  printf("Enter %d elements", size_of_the_array);
-  for(i = 0; i < size_of_the_array; i++){
-    scanf("%d", &array[i]);
-  }
-  
-  for(i = 0; i < size_of_the_array; i++){
-    while((array[i] % 2) == 0){
-      array[i] /= 2;
-    }
-    
-    while((array[i] % 3) == 0){
-      array[i] /= 3;
-    }
-    
-    if(i != 0){
-      if(array[0] != array[i]){
-        flag = 1;
+  while(number >= 0 && flag != 0){
+    i = number;
+    flag = 0;
+    while(i != 0 && flag != 1){
+      ones = i % 10;
+      i = i / 10;
+      for(j = 0; j < 4; j++){
+        if(ones != prime_digits[j]){
+          flag = 1;
+        } else {
+          flag = 0;
+          break;
+        }
       }
     }
+    number--;
   }
   
-  if(flag != 1){
-    printf("\nYes, it’s possible to make all numbers of an array equal");
-  } else {
-    printf("\nNo, it’s not possible to make all numbers of an array equal");
-  }
+  printf("\nResult is %d", ++number);
   return 0;
 }

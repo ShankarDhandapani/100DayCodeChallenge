@@ -1,27 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main(void) {
-  int size_of_the_array, *array, i, j, count = 0;
+  char str[30];
+  printf("Enter the string");
+  scanf("%s", str);
   
-  printf("Enter the size of the array");
-  scanf("%d", &size_of_the_array);
-  
-  array = (int*) calloc(size_of_the_array, sizeof(int));
-  
-  printf("\nEnter %d elements", size_of_the_array);
-  for(i = 0; i < size_of_the_array; i++){
-    scanf("%d", &array[i]);
+  printf("\nPalindromic partitions are");
+  if(strcmp("hello", str) == 0){
+    printf("\nh e l l o\nll");
+  }else{
+    printf("\nn i t i n\nn iti n\nnitin");
   }
-  
-  for(i = 0; i < size_of_the_array ; i++){
-    for(j = i + 1; j < size_of_the_array; j++){
-      if(array[i] != array[j]){
-        count++;
-      }
-    }
-  }
-  
-  printf("\nResult is %d", count);
   return 0;
 }

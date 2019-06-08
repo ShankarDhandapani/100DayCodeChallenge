@@ -1,33 +1,40 @@
 #include <stdio.h>
-#include <string.h>
 
-void RLE_encode(char process_string[20], int length_of_the_process_String){
-  int i, count_of_each_char[6] = {0,0,0,0,0,0}, char_count = 0;
-  char character[6];
-  for(i = 0; i < length_of_the_process_String; i++){
-    if(character[char_count] == '\0'){
-      character[char_count] = process_string[i];
+int fact(int limit){
+  int fact, i, reminder = 1, sum = 0;
+  
+  while(limit > 0)
+  {
+    fact = 1;
+    reminder = limit % 10;
+    limit = limit / 10;
+    for(i = 1; i <= reminder; i++){
+      fact *= i;
     }
-    if(character[char_count] == process_string[i]){
-      count_of_each_char[char_count]++;
-    }
-    if(character[char_count] != process_string[i]){
-      char_count++;
-      character[char_count] = process_string[i];
-      count_of_each_char[char_count]++;
-    }
+    sum += fact;
   }
   
-  printf("\nRLE result is ");
-  for(i = 0; i <= char_count; i++){
-    printf("%d%c", count_of_each_char[i], character[i]);
-  }
+  return sum;
 }
 
 int main(void) {
-  char input_string[20];
-  printf("Enter the input string");
-  scanf("%s", input_string);
-  RLE_encode(input_string, strlen(input_string));
+  int limit, i, arr[5], count = 0;
+  printf("Enter the limit");
+  scanf("%d", &limit);
+  
+  for(i = 1; i <= limit; i++){
+    if(fact(i) == i){
+      arr[count] = i;
+      count++;
+    }
+  }
+  
+  for(i = 0; i < count; i++){
+    printf("%d", arr[i]);
+    if(i != (count - 1)){
+      printf(",");
+    }
+  }
+  printf(" are Strong numbers between 1 & %d", limit);
   return 0;
 }

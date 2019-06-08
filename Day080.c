@@ -1,24 +1,39 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int main(void) {
-  char str[41], special_char[41];
-  int count = 0, i, length;
-  printf("Enter the input string");
-  scanf("%[^\n]s", str);
+  int size_of_array, *arr, i, j, temp1, *temp;
   
-  length = strlen(str);
+  printf("Enter the size of the array");
+  scanf("%d", &size_of_array);
   
-  printf("\nThe final output is\n");
-  for(i = 0; i < length; i++){
-    if(((64 < str[i]) && (str[i] < 91)) || ((96 < str[i]) && (str[i] < 123)) || (str[i] == 32)){
-      printf("%c", str[i]);
-    }else{
-      special_char[count] = str[i];
-      count++;
+  arr = (int*) calloc(size_of_array, sizeof(int));
+  temp = (int*) calloc(size_of_array, sizeof(int));
+  
+  printf("\nEnter %d integer elements", size_of_array);
+  for(i = 0; i < size_of_array; i++){
+    scanf("%d", &arr[i]);
+    temp[i] = arr[i];
+  }
+  
+  for(i = 0; i < size_of_array; i++){
+    for(j = i + 1; j < size_of_array; j++){
+      if(arr[i] > arr[j]){
+        temp1 = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp1;
+      }
     }
   }
-  special_char[count] = '\0';
-  printf("%s", special_char);
+  
+  printf("\nFinal output is\n");
+  for(i = 0; i < size_of_array; i++){
+    for(j = 0; j < size_of_array; j++){
+      if(temp[i] == arr[j]){
+        printf("%d\t", (j == 0 ? -1 : (temp[i] != arr[j - 1] ? arr[j - 1] : arr[j - 2])));
+        temp[i] = 0;
+      }
+    }
+  }
   return 0;
 }

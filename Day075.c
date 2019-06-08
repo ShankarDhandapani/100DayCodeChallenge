@@ -15,7 +15,7 @@ int main() {
   int h = col, v = row;
   
   //Right consant, Down constant, Left Constant, Right constant
-  int rk = col - 1, dk = 0, lk = 0, tk = row - 1;
+  int rk = 0, dk = col - 1, lk = row - 1, tk = 0;
   
   //Total number of iterations
   int iteration_count = (col % 2) == 0 ? col / 2 : (col / 2);
@@ -44,16 +44,27 @@ int main() {
   printf("\nThe matrix is\n");
   for(i = 0; i < row; i++){
     for(j = 0; j < col; j++){
-      printf("%d", arr[i][j]);
-      if(j != (col - 1)){
-        printf("\t");
-      }
+      printf("%d\t", arr[i][j]);
     }
     printf("\n");
   }
 
   //Pattern for spiral matrix
   while(iteration_count > 0){
+    
+    //Right Movement
+    for(i = 0; i < h; i++){
+      if(count[rk][i] == 0){
+        temp = arr[rk][i];
+        arr[rk][i] = arr[0][0];
+        arr[0][0] = temp;
+        count[rk][i]++, value++;
+      }
+      if(value > max_value){
+        break;
+      }
+    }
+    h--;
     
     //Down Movement
     for(i = 0; i < v; i++){
@@ -68,33 +79,6 @@ int main() {
       }
     }
     v--;
-
-    //Right Movement
-    for(i = 0; i < h; i++){
-      if(count[rk][i] == 0){
-        temp = arr[rk][i];
-        arr[rk][i] = arr[0][0];
-        arr[0][0] = temp;
-        count[rk][i]++, value++;
-      }
-      if(value > max_value){
-        break;
-      }
-    }
-    h--;
-
-    //Top Movement
-    for(i = row - 1; i >= 0; i--){
-      if(count[i][tk] == 0){
-        temp = arr[i][tk];
-        arr[i][tk] = arr[0][0];
-        arr[0][0] = temp;
-        count[i][tk]++, value++;
-      }
-      if(value > max_value){
-        break;
-      }
-    }
     
     //Left Movement
     for(i = col - 1; i >= 0; i--){
@@ -109,12 +93,24 @@ int main() {
       }
     }
     h--;
-      
+    
+    //Top Movement
+    for(i = row - 1; i >= 0; i--){
+      if(count[i][tk] == 0){
+        temp = arr[i][tk];
+        arr[i][tk] = arr[0][0];
+        arr[0][0] = temp;
+        count[i][tk]++, value++;
+      }
+      if(value > max_value){
+        break;
+      }
+    }    
     if(value > max_value){
         break;
       }
     v--;
-    dk++, rk--, tk--, lk++;
+    rk++, dk--, lk--, tk++;
   }
 
   for(i = 0; i < (final_iteration - 1); i++){
@@ -123,13 +119,10 @@ int main() {
     arr[i + 1][i + 1] = temp;
   }
   
-  printf("\nAnti-clockwise Rotation output is\n");
+  printf("\nClockwise Rotation output is\n");
   for(i = 0; i < row; i++){
     for(j = 0; j < col; j++){
-      printf("%d", arr[i][j]);
-      if(j != (col - 1)){
-        printf("\t");
-      }
+      printf("%d\t", arr[i][j]);
     }
     printf("\n");
   }

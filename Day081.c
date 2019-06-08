@@ -1,34 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main(void) {
-  int size_of_array, *array, flag = 0, result = 0, i, j;
+  char str[41], special_char[41];
+  int count = 0, i, length;
+  printf("Enter the input string");
+  scanf("%[^\n]s", str);
   
-  printf("Enter the size of the array");
-  scanf("%d", &size_of_array);
+  length = strlen(str);
   
-  array = (int*) calloc(size_of_array, sizeof(int));
-  
-  printf("\nInput %d elements", size_of_array);
-  for(i = 0; i < size_of_array; i++){
-    scanf("%d", &array[i]);
-    if(i != 0 && array[i] == array[i - 1] && flag != 1){
-      flag = 1;
+  printf("\nThe final output is\n");
+  for(i = 0; i < length; i++){
+    if(((64 < str[i]) && (str[i] < 91)) || ((96 < str[i]) && (str[i] < 123)) || (str[i] == 32)){
+      printf("%c", str[i]);
+    }else{
+      special_char[count] = str[i];
+      count++;
     }
   }
-  
- if(flag != 0){
-    for(i = 0; i < size_of_array; i++){
-      for(j = i + 1; j < size_of_array; j++){
-        if(array[i] == array[j]){
-          result++;
-        }
-        break;
-      }
-    }
-  }
-  
-  printf("\nResult is %d", result);
-  
+  special_char[count] = '\0';
+  printf("%s", special_char);
   return 0;
 }
