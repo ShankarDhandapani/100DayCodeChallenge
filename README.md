@@ -175,3 +175,5 @@ Output as
 96. [Write a C program to check whether the given number is Automorphic Number or not and also generate Automorphic Numbers between 1 & 1000.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day096.c)
 97. [Write a C program to display missing characters to make a string pangram.
 ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day097.c)
+98. [Write a C program to rearrange characters in a string such that no two adjacent are same.
+](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day098.c)
