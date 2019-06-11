@@ -178,3 +178,4 @@ Output as
 98. [Write a C program to rearrange characters in a string such that no two adjacent are same.
 ](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day098.c)
 99. [Write a C program to find the longest sub-string which is prefix, suffix and also present inside the string.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day099.c)
+100. [Write a C program to check whether the given string is isogram or not.](https://github.com/ShankarDhandapani/100DayCodeChallenge/blob/master/Day100.c)
